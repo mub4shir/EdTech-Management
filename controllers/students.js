@@ -27,7 +27,7 @@ exports.getStudents = asyncHandler(async (req, res, next) => {
 exports.getStudent = asyncHandler(async (req, res, next) => {
   const student = await Student.findById(req.params.id).populate({
     path: 'school',
-    select: 'name description',
+    select: 'name city',
   });
 
   if (!student) {

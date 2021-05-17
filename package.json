@@ -1,14 +1,14 @@
 {
-  "name": "devcamper_api",
+  "name": "edtech-management",
   "version": "1.0.0",
-  "description": "Devcamper backend API",
+  "description": "EdTech-Management backend API",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "author": "Mubashir Ali",
+  "license": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
@@ -24,7 +24,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
-    "node-geocoder": "^3.24.0",
     "nodemailer": "^6.3.0",
     "slugify": "^1.3.5",
     "xss-clean": "^0.1.1"
