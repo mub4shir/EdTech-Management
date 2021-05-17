@@ -19,7 +19,7 @@ router
   .get(
     advancedResults(Student, {
       path: 'school',
-      select: 'name description',
+      select: 'name city',
     }),
     getStudents
   )
