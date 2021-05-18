@@ -91,7 +91,7 @@ exports.updateStudent = asyncHandler(async (req, res, next) => {
   }
 
   // Make sure user is student owner
-  if (students.user.toString() !== req.user.id && req.user.role !== 'admin') {
+  if (student.user.toString() !== req.user.id && req.user.role !== 'admin') {
     return next(
       new ErrorResponse(
         `User ${req.user.id} is not authorized to update student ${student._id}`,
